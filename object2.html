@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체2</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        const debug = {
+            log: function (value) {
+                console.log(value);
+            }
+        };
+        debug.log('hello Method');
+
+        // const a = { name: 'Angela' };
+        // const array = [1, 2, a];
+
+        // console.log(a === array[2]);//true
+
+        const a = { name: 'Agela' };
+        const b = a;//변수 b에 a를 대입
+
+        a.name = 'hero';
+        console.log(b.name);
+
+        //객체가 아닌 값 (문자열,숫자, 불값, null, undefined)
+        //객체가 아닌 값을 변수에 저장한 경우에는 참조 관계가 생기지 않음.
+        let a1 = 'zero';
+        let b1 = a1;
+        a1 = 'hero';
+
+        console.log(b1);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

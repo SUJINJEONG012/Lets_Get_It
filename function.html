@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+</head>
+
+<body>
+    <script>
+
+        // function a() {
+        //     if (false) {
+        //         return;
+        //     }
+        //     console.log('실행됩니다.');
+        // }
+        // a();
+
+        //함수선언
+        function a(parameter) {
+            console.log(parameter);
+        }
+
+
+        a('parameter');//함수호출
+
+
+        function a1(w, x, y, z) {
+            console.log(w, x, y, z);
+            console.log(arguments);
+        }
+        a1('Hello', '파라미터', 'Arugu');
+
+        function add(x, y) {
+            return x + y;
+        }
+        console.log(add(3, 5));
+        console.log(add(5, 20));
+
+
+        const multiply = (x, y, z) => {
+            return x * y * z;
+        }
+        // function multiply(x, y, z) {
+        //     return x * y * z;
+        // }
+
+        console.log(multiply(2, 5, 7));
+
+
+        function minus1(x, y) {
+            const a1 = 100;//함수 안에 상수선언후 return에 대입
+            return (x - y) * a1;
+        }
+        console.log(minus1(5, 3));
+
+        // 전역상수
+        const a2 = 100;
+
+        function minus2(x, y) {
+            return (x - y) * a2;
+        }
+        console.log(minus2(5, 3));
+
+
+    </script>;
+
+</body>
+
+</html>

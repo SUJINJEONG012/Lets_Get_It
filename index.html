@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let first = true;
+        let second = false;
+
+        if (first) {
+            console.log('첫 번째 조건 층족!');
+            if (second) {
+                console.log('두번째 조건도 충족!');
+            } else {
+                console.log('두번째 조건은 불충족!');
+            }
+        } else {
+            console.log('첫번째조건 불충족!');
+        }
+
+        let value = 5 < 0 ? '참입니다' : '거짓입니다';
+        console.log(value);
+
+        let condition = true;
+        let value2 = condition ? '참' : '거짓';
+        console.log(value2);
+
+        if (condition) {
+            value2 = '참';
+        } else {
+            value = '거짓';
+        }
+        console.log(value2);
+    </script>
+</body>
+
+</html>

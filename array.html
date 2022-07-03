@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        // const arrayOfArray = [[1, 2, 3], [4, 5]];
+        // arrayOfArray[0];
+        // console.log(arrayOfArray[0]);
+
+        // const a = 10;
+        // const b = 20;
+        // const variableArray = [a, b, 30];
+
+        // console.log(variableArray[1]);
+
+        // const everything = ['사과', 1, undefined, true, '배열', null, '', NaN];
+        // console.log(everything.length);
+
+        // const findLastElements = ['a', 'b', 'c', 'd', 'e'];
+        // console.log(findLastElements.length - 1);
+
+        // const target = ['가', '나', '다', '라', '마'];
+        // const result = target.includes('다');
+        // const result2 = target.includes('카');
+
+        // console.log(result);
+        // console.log(result2);
+
+        const arr = ['가', '라', '다', '라', '마', '라'];
+
+        let index = arr.indexOf('라');
+        console.log(index);
+        while (index > -1) {
+            arr.splice(index, 1);
+            index = arr.indexOf('라');
+        }
+
+
+        console.log(arr);
+
+
+    </script>
+</body>
+
+</html>
